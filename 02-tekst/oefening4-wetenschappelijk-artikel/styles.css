@@ -1,0 +1,53 @@
+/* Huisstijl HTML-cursus — thema 02 Tekst */
+:root {
+  --accent: #2f855a;
+  --accent-soft: #e6f4ec;
+  --page: #eef0f3;
+  --card: #ffffff;
+  --text: #2a2d34;
+  --muted: #66707e;
+  --border: #e2e6ea;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #12141a;
+    --card: #1c1f26;
+    --text: #e8eaee;
+    --muted: #9aa4b0;
+    --border: #2e333d;
+  }
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { background: var(--page); }
+
+body {
+  max-width: 720px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 2.5rem 2rem;
+  background: var(--card);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.06);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 { color: var(--accent); line-height: 1.25; margin: 1.5em 0 0.5em; }
+h1 { font-size: 2rem; margin-top: 0; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; }
+p { margin: 0.75em 0; }
+img, iframe, video, picture { max-width: 100%; }
+
+/* ==== THEME EXTRA CSS (below) ==== */
+blockquote { border-left: 4px solid var(--accent); padding: 0.5rem 1rem; margin: 1rem 0; background: var(--accent-soft); font-style: italic; }
+address { font-style: normal; color: var(--muted); margin: 0.5rem 0; }
+ul, ol, dl { margin: 0.75rem 0; padding-left: 1.5rem; }
+dt { font-weight: 600; }
+details { margin: 0.5rem 0; padding: 0.5rem 0.75rem; border: 1px solid var(--border); border-radius: 6px; }
+summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+mark { background: var(--accent-soft); color: inherit; padding: 0 0.2em; }
+abbr { text-decoration: underline dotted; cursor: help; }
