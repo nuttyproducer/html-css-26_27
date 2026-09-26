@@ -19,7 +19,7 @@
 - **Accent per theme:** 01 `#5b6b7a`, 02 `#2f855a`, 03 `#4f46e5`, 04 `#c2410c`, 05 `#db2777`, 06 `#0d9488`, 07 `#7c3aed`, 08 `#2563eb`.
 - **Images:** download into `img/` with descriptive kebab-case filenames; reference via relative `img/<file>`; on download failure fall back to a placeholder note in `info.md` + empty `src` in `index.html` (never a broken remote URL).
 - **Screenshots:** none generated; the 13 "aanbevolen" exercises get an "Optioneel voorbeeld" note in `info.md`.
-- **Not a git repo** (verified): commit steps are optional. Offer `git init` once, at the end.
+- **Git:** the repo IS git now (initialized for SDD). Commit your work with a clear message (`feat(task-N): …`). This is required so each task's review package has a clean diff.
 
 ---
 
