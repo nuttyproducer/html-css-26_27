@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resultatenoverzicht — periode 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Resultatenoverzicht periode 1</h1>
+
+  <p>De cijfers van de eerste periode, met per leerling het gemiddelde. Onderaan de tabel
+     staat het klasgemiddelde in de voet.</p>
+
+  <!-- Resultatenoverzicht met colgroup, thead, tbody en tfoot -->
+  <table>
+    <caption>Resultaten periode 1 — klas 2A</caption>
+    <colgroup>
+      <col>
+      <col span="4">
+    </colgroup>
+    <thead>
+      <tr>
+        <th scope="col">Leerling</th>
+        <th scope="col">Nederlands</th>
+        <th scope="col">Wiskunde</th>
+        <th scope="col">Engels</th>
+        <th scope="col">Gemiddelde</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Lena Peeters</th>
+        <td>7,5</td>
+        <td>8,0</td>
+        <td>7,0</td>
+        <td>7,5</td>
+      </tr>
+      <tr>
+        <th scope="row">Noah De Smet</th>
+        <td>6,5</td>
+        <td>7,0</td>
+        <td>6,0</td>
+        <td>6,5</td>
+      </tr>
+      <tr>
+        <th scope="row">Emma Janssens</th>
+        <td>8,0</td>
+        <td>7,5</td>
+        <td>8,5</td>
+        <td>8,0</td>
+      </tr>
+      <tr>
+        <th scope="row">Liam Vandenberghe</th>
+        <td>6,0</td>
+        <td>6,5</td>
+        <td>7,0</td>
+        <td>6,5</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">Klasgemiddelde</th>
+        <td>7,0</td>
+        <td>7,3</td>
+        <td>7,1</td>
+        <td>7,1</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
