@@ -399,7 +399,7 @@ dl() { mkdir -p "$(dirname "$1")"; curl -sL -A "$UA" --retry 3 -o "$1" "$2"; }
 for 01.2) and get the user's approval before writing files.
 
 - [ ] **Step 1: `oefening1-mijn-eerste-pagina`** (Heel makkelijk) — base page: `<title>`, one `<p>` about yourself, one `<img src="img/portret.jpg" alt="…">`. Applies T1/T3/T4. Info.md Vereisten: volledige basisstructuur, één paragraaf, één afbeelding met `alt`, minstens één commentaar. **Referentie-note** (aanbevolen).
-- [ ] **Step 2: `oefening2-code-opschonen`** (Makkelijk) — error-fixing (T2). Deliberate errors to build in: UPPERCASE tags, single quotes, missing quotes, inconsistent indentation, a `<P>` around `<img>` (invalid nesting). Corrected `oplossing.html` follows the huisregels. Internal error list (not in info.md).
+- [ ] **Step 2: `oefening2-code-opschonen`** (Makkelijk) — error-fixing (T2). Deliberate errors to build in: UPPERCASE tags, single quotes, missing quotes, inconsistent indentation, a `<p>` wrapping a `<ul>` (invalid nesting). Corrected `oplossing.html` follows the huisregels. Internal error list (not in info.md).
 - [ ] **Step 3: `oefening3-metadata-en-links`** (Gemiddeld) — `<head>` with `<meta name="description">`, `keywords`, `author`, `<link rel="icon">`, `<link rel="stylesheet">`; body over a hobby with `img/hobby-wandelen.jpg`. Tests head-vs-body understanding.
 - [ ] **Step 4: `oefening4-menukaart`** (Gemiddeld–moeilijk) — nested menu structure (categories with content), correct nesting; part of the code temporarily commented out. Image `img/menukaart.jpg`.
 - [ ] **Step 5: Verify (huisregel checklist)** — each file: base structure, `lang="nl"`, lowercase, double quotes, valid nesting, one `<h1>` max, ≥1 comment, `alt` on every `<img>`, no `<b>`/`<i>`.
