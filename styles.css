@@ -1,0 +1,54 @@
+/* Huisstijl HTML-cursus — overzichtspagina */
+:root {
+  --accent: #2563eb;
+  --accent-soft: #e8f0fe;
+  --page: #eef0f3;
+  --card: #ffffff;
+  --text: #2a2d34;
+  --muted: #66707e;
+  --border: #e2e6ea;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #12141a;
+    --card: #1c1f26;
+    --text: #e8eaee;
+    --muted: #9aa4b0;
+    --border: #2e333d;
+  }
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { background: var(--page); }
+
+body {
+  max-width: 720px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 2.5rem 2rem;
+  background: var(--card);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.06);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1 { font-size: 2rem; color: var(--accent); line-height: 1.25; margin: 0 0 0.25rem; }
+h2 { font-size: 1.35rem; color: var(--accent); line-height: 1.25; margin: 1.75em 0 0.25rem; padding-top: 1em; border-top: 2px solid var(--border); }
+p { margin: 0.75em 0; }
+.meta { color: var(--muted); font-size: 0.9rem; margin-top: 0; }
+
+section ul { list-style: none; margin: 0.5rem 0; padding: 0; }
+section li { padding: 0.35rem 0; border-bottom: 1px solid var(--border); }
+section li:last-child { border-bottom: none; }
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: var(--accent); }
+
+.oplossing { color: var(--muted); }
+.oplossing a { color: var(--muted); border-bottom-color: var(--border); }
+.oplossing a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }

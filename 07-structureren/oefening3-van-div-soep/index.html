@@ -1,0 +1,51 @@
+<!--
+  OEFENING 07.3 — Van div-soep naar semantische HTML
+  Thema: Structureren  ·  Moeilijkheidsgraad: Gemiddeld–moeilijk
+
+  OPDRACHT
+  ---------
+  Deze pagina is volledig met <div>-elementen opgebouwd ("div-soep"). Herschrijf dezelfde
+  inhoud met correcte semantische elementen (<header>, <nav>, <main>, <article>, <aside>,
+  <footer>, correcte koppen en lijsten).
+
+  TIPS
+  ----
+  - Vraag je bij elk blok af wat de betekenis is (kop, menu, inhoud, zijbalk, voet...).
+-->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Van div-soep</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Herschrijf de inhoud hieronder met semantische elementen -->
+  <div class="kop">
+    <div class="titel">Mijn website</div>
+    <div class="menu">
+      <div><a href="#">Home</a></div>
+      <div><a href="#">Over</a></div>
+      <div><a href="#">Contact</a></div>
+    </div>
+  </div>
+
+  <div class="inhoud">
+    <div class="artikel">
+      <div class="titel">Eerste artikel</div>
+      <div class="tekst">Dit is de tekst van het eerste artikel.</div>
+    </div>
+    <div class="zijbalk">
+      <div class="titel">Over mij</div>
+      <div class="tekst">Hier staat wat meer informatie over de auteur.</div>
+    </div>
+  </div>
+
+  <div class="voet">
+    <div class="tekst">&copy; 2026 Mijn website</div>
+  </div>
+
+</body>
+</html>

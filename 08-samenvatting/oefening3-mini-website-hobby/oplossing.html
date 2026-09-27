@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gitaar spelen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Gitaar spelen</h1>
+  </header>
+
+  <!-- Navigatie met interne ankers naar de secties -->
+  <nav>
+    <ul>
+      <li><a href="#over">Over gitaar</a></li>
+      <li><a href="#gitaar">Mijn gitaar</a></li>
+      <li><a href="#lessen">Lesrooster</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="over">
+      <h2>Over gitaar</h2>
+      <p>De gitaar is een van de populairste instrumenten ter wereld. Lees er meer over op
+         <a href="https://nl.wikipedia.org/wiki/Gitaar">Wikipedia</a>.</p>
+    </section>
+
+    <section id="gitaar">
+      <h2>Mijn gitaar</h2>
+      <!-- Afbeelding met bijschrift -->
+      <figure>
+        <img src="img/gitaar.jpg" alt="Een akoestische gitaar">
+        <figcaption>Mijn akoestische gitaar.</figcaption>
+      </figure>
+    </section>
+
+    <section id="lessen">
+      <h2>Lesrooster</h2>
+      <!-- Tabel met oefenmomenten -->
+      <table>
+        <caption>Mijn oefenmomenten</caption>
+        <thead>
+          <tr>
+            <th scope="col">Dag</th>
+            <th scope="col">Tijd</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Maandag</th>
+            <td>18:00</td>
+          </tr>
+          <tr>
+            <th scope="row">Woensdag</th>
+            <td>18:00</td>
+          </tr>
+          <tr>
+            <th scope="row">Zaterdag</th>
+            <td>10:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="naam">Naam</label>
+          <input type="text" id="naam" name="naam" required>
+        </div>
+        <div>
+          <label for="email">E-mailadres</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <button type="submit">Versturen</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 — Gitaar spelen</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hero-afbeelding — bergen in Nepal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Bergen in Nepal</h1>
+
+  <p>Deze hero-afbeelding laadt een andere breedte naargelang het scherm. Zo downloadt een
+     kleine telefoon geen onnodig grote foto.</p>
+
+  <!--
+    Waarom jpg?
+    - jpg: kleine bestandsgrootte voor foto's, perfect voor een hero-afbeelding.
+    - png: grotere bestanden, beter voor vlakken/logo's met transparantie.
+    - svg: vector, maar niet geschikt voor gedetailleerde foto's.
+    - webp: moderner en kleiner, maar hier niet nodig en minder universeel ondersteund.
+  -->
+  <picture>
+    <source media="(min-width: 960px)" srcset="img/landschap-1280.jpg">
+    <source media="(min-width: 500px)" srcset="img/landschap-960.jpg">
+    <img src="img/landschap-500.jpg" alt="Besneeuwde bergtoppen in Nepal rond een bergmeer">
+  </picture>
+
+</body>
+</html>

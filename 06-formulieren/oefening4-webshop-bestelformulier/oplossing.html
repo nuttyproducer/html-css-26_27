@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bestelformulier</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Bestelformulier</h1>
+
+  <p>Vul hieronder je bestelling in. Velden met een * zijn verplicht.</p>
+
+  <!-- Bestelformulier: product en levering -->
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Product</legend>
+      <div>
+        <label for="aantal">Aantal stuks *</label>
+        <input type="number" id="aantal" name="aantal" min="1" max="10" step="1" required>
+      </div>
+      <div>
+        <label for="kleur">Gewenste kleur</label>
+        <input type="color" id="kleur" name="kleur" value="#0d9488">
+      </div>
+      <div>
+        <label for="logo">Upload een logo (png of jpg)</label>
+        <input type="file" id="logo" name="logo" accept="image/png, image/jpeg">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Levering</legend>
+      <div>
+        <label for="leverdatum">Gewenste leverdatum *</label>
+        <input type="date" id="leverdatum" name="leverdatum" required>
+      </div>
+      <div>
+        <label for="adres">Leveradres</label>
+        <input type="text" id="adres" name="adres" placeholder="Straat en huisnummer">
+      </div>
+    </fieldset>
+
+    <button type="submit">Bestellen</button>
+  </form>
+
+</body>
+</html>

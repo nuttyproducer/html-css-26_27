@@ -31,5 +31,4 @@ Bouw een eenpaginasite over jezelf. Plaats bovenaan een navigatiemenu (een `<nav
 
 ## Referentie
 
-> 📷 **Optioneel voorbeeld:** hier kan een full-page screenshot (`referentie.png`) van het
-> afgewerkte resultaat worden toegevoegd.
+> 📷 **Voorbeeld:** in `voorbeeld.png` zie je het afgewerkte resultaat.

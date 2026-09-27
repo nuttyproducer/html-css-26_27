@@ -19,7 +19,7 @@
 - **Accent per theme:** 01 `#5b6b7a`, 02 `#2f855a`, 03 `#4f46e5`, 04 `#c2410c`, 05 `#db2777`, 06 `#0d9488`, 07 `#7c3aed`, 08 `#2563eb`.
 - **Images:** download into `img/` with descriptive kebab-case filenames; reference via relative `img/<file>`; on download failure fall back to a placeholder note in `info.md` + empty `src` in `index.html` (never a broken remote URL).
 - **Screenshots:** none generated; the 13 "aanbevolen" exercises get an "Optioneel voorbeeld" note in `info.md`.
-- **Git:** the repo IS git now (initialized for SDD). Commit your work with a clear message (`feat(task-N): …`). This is required so each task's review package has a clean diff.
+- **Not a git repo** (verified): commit steps are optional. Offer `git init` once, at the end.
 
 ---
 
@@ -302,8 +302,8 @@ Les 02–07 above (tables, forms, figures, structure) as each exercise's `oploss
 | 10 | `05-media/oefening1-foto-bijschrift/img/joshua-tree.jpg` | `https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Joshua_Tree_National_Park_2013.jpg/1280px-Joshua_Tree_National_Park_2013.jpg` |
 | 11 | `05-media/oefening2-stappenplan-in-beeld/img/paard-1.jpg` | `https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Horse_December_2014-1.jpg/1280px-Horse_December_2014-1.jpg` |
 | 12 | `05-media/oefening2-stappenplan-in-beeld/img/paard-2.jpg` | `https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Biandintz_eta_zaldiak_-_modified2.jpg/1280px-Biandintz_eta_zaldiak_-_modified2.jpg` |
-| 13 | `05-media/oefening4-responsieve-afbeelding/img/landschap-500.jpg` | Nepal mountains at 500px (thumb width variant) |
-| 14 | `05-media/oefening4-responsieve-afbeelding/img/landschap-960.jpg` | Nepal mountains at 960px (thumb width variant) |
+| 13 | `05-media/oefening4-responsieve-afbeelding/img/landschap-480.jpg` | Nepal mountains at 480px (thumb width variant) |
+| 14 | `05-media/oefening4-responsieve-afbeelding/img/landschap-800.jpg` | Nepal mountains at 800px (thumb width variant) |
 | 15 | `05-media/oefening4-responsieve-afbeelding/img/landschap-1280.jpg` | Nepal mountains at 1280px (thumb width variant) |
 | 16 | `07-structureren/oefening2-blogartikel-zijbalk/img/bureau.jpg` | `https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Writing_desk_of_Pierre_Victor_de_Besenval.jpg/1280px-Writing_desk_of_Pierre_Victor_de_Besenval.jpg` |
 | 17 | `08-samenvatting/oefening2-persoonlijk-cv/img/pasfoto.jpg` | `https://upload.wikimedia.org/wikipedia/commons/f/f4/Julie_Brown_%28business_person%29.jpg` |
@@ -312,7 +312,7 @@ Les 02–07 above (tables, forms, figures, structure) as each exercise's `oploss
 
 **Nepal mountains base URL** (for rows 13–15, vary the width segment):
 `https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Mountains_in_snow%2C_Mountain_lake%2C_Chola_Valley%2C_Nepal%2C_Himalayas.jpg/{W}px-Mountains_in_snow%2C_Mountain_lake%2C_Chola_Valley%2C_Nepal%2C_Himalayas.jpg`
-with `{W}` ∈ {500, 960, 1280} (all allowed Wikimedia thumbnail sizes). This yields the three responsive variants for `05.4`.
+with `{W}` ∈ {480, 800, 1280}. This yields the three responsive variants for `05.4`.
 
 **Download script** (`Task 0`, bash + curl; runs from repo root):
 ```bash
@@ -320,7 +320,7 @@ set -euo pipefail
 UA="Mozilla/5.0 (X11; Linux x86_64) exercise-generator/1.0"
 dl() { mkdir -p "$(dirname "$1")"; curl -sL -A "$UA" --retry 3 -o "$1" "$2"; }
 # rows 1–12, 16–19 (full URLs) via dl "DEST" "URL"
-# rows 13–15 via: dl "05-media/oefening4-responsieve-afbeelding/img/landschap-500.jpg" "…/{500}px-…"  (and 960, 1280)
+# rows 13–15 via: dl "05-media/oefening4-responsieve-afbeelding/img/landschap-480.jpg" "…/{480}px-…"
 ```
 
 ---
@@ -399,7 +399,7 @@ dl() { mkdir -p "$(dirname "$1")"; curl -sL -A "$UA" --retry 3 -o "$1" "$2"; }
 for 01.2) and get the user's approval before writing files.
 
 - [ ] **Step 1: `oefening1-mijn-eerste-pagina`** (Heel makkelijk) — base page: `<title>`, one `<p>` about yourself, one `<img src="img/portret.jpg" alt="…">`. Applies T1/T3/T4. Info.md Vereisten: volledige basisstructuur, één paragraaf, één afbeelding met `alt`, minstens één commentaar. **Referentie-note** (aanbevolen).
-- [ ] **Step 2: `oefening2-code-opschonen`** (Makkelijk) — error-fixing (T2). Deliberate errors to build in: UPPERCASE tags, single quotes, missing quotes, inconsistent indentation, a `<p>` wrapping a `<ul>` (invalid nesting). Corrected `oplossing.html` follows the huisregels. Internal error list (not in info.md).
+- [ ] **Step 2: `oefening2-code-opschonen`** (Makkelijk) — error-fixing (T2). Deliberate errors to build in: UPPERCASE tags, single quotes, missing quotes, inconsistent indentation, a `<P>` around `<img>` (invalid nesting). Corrected `oplossing.html` follows the huisregels. Internal error list (not in info.md).
 - [ ] **Step 3: `oefening3-metadata-en-links`** (Gemiddeld) — `<head>` with `<meta name="description">`, `keywords`, `author`, `<link rel="icon">`, `<link rel="stylesheet">`; body over a hobby with `img/hobby-wandelen.jpg`. Tests head-vs-body understanding.
 - [ ] **Step 4: `oefening4-menukaart`** (Gemiddeld–moeilijk) — nested menu structure (categories with content), correct nesting; part of the code temporarily commented out. Image `img/menukaart.jpg`.
 - [ ] **Step 5: Verify (huisregel checklist)** — each file: base structure, `lang="nl"`, lowercase, double quotes, valid nesting, one `<h1>` max, ≥1 comment, `alt` on every `<img>`, no `<b>`/`<i>`.
@@ -449,7 +449,7 @@ for 01.2) and get the user's approval before writing files.
 - [ ] **Step 1: `oefening1-foto-bijschrift`** (Makkelijk) — one `<figure>` with `<img alt>` + `<figcaption>`. Image `img/joshua-tree.jpg`.
 - [ ] **Step 2: `oefening2-stappenplan-in-beeld`** (Gemiddeld) — one `<figure>` with ≥3 `<img>` (each with meaningful `alt`) + one shared `<figcaption>`. Images `img/paard-1.jpg`, `img/paard-2.jpg`.
 - [ ] **Step 3: `oefening3-video-kaart-embedden`** (Gemiddeld) — embedded YouTube `<iframe>` + Google Maps `<iframe>` + begeleidende tekst. No local images.
-- [ ] **Step 4: `oefening4-responsieve-afbeelding`** (Moeilijk) — `<picture>` with multiple `<source media="...">` (500/960/1280 variants) + `<img>` fallback; argue jpg vs png vs svg vs webp in a comment. Images `img/landschap-*.jpg`.
+- [ ] **Step 4: `oefening4-responsieve-afbeelding`** (Moeilijk) — `<picture>` with multiple `<source media="...">` (480/800/1280 variants) + `<img>` fallback; argue jpg vs png vs svg vs webp in a comment. Images `img/landschap-*.jpg`.
 - [ ] **Step 5: Verify** — every `<img>` has relevant `alt`; ≥1 figure/figcaption; content-vs-design reasoning present where asked.
 - [ ] **Step 6: User review gate.**
 

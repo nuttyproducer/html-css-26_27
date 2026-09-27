@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inschrijving workshop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Inschrijving workshop</h1>
+
+  <p>Schrijf je in voor de workshop "Foto's bewerken". Velden in de eerste groep zijn
+     verplicht; de rest is optioneel.</p>
+
+  <!-- Inschrijvingsformulier: verplicht + optioneel -->
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Verplicht</legend>
+      <div>
+        <label for="naam">Naam</label>
+        <input type="text" id="naam" name="naam" required>
+      </div>
+      <div>
+        <label for="email">E-mailadres</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="leeftijd">Leeftijdscategorie</label>
+        <select id="leeftijd" name="leeftijd" required>
+          <option value="">Kies een categorie</option>
+          <option value="jonger">Jonger dan 18</option>
+          <option value="18-25">18 tot 25</option>
+          <option value="26-40">26 tot 40</option>
+          <option value="ouder">Ouder dan 40</option>
+        </select>
+      </div>
+      <div>
+        <p>Aanhef</p>
+        <label><input type="radio" name="aanhef" value="dhr" required> De heer</label>
+        <label><input type="radio" name="aanhef" value="mevr"> Mevrouw</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Optioneel</legend>
+      <div>
+        <p>Interesses</p>
+        <label><input type="checkbox" name="interesses" value="fotografie"> Fotografie</label>
+        <label><input type="checkbox" name="interesses" value="muziek"> Muziek</label>
+        <label><input type="checkbox" name="interesses" value="sport"> Sport</label>
+      </div>
+      <div>
+        <label for="tevredenheid">Hoe tevreden ben je over de inschrijving? (1–10)</label>
+        <input type="range" id="tevredenheid" name="tevredenheid" min="1" max="10">
+      </div>
+    </fieldset>
+
+    <button type="submit">Inschrijven</button>
+  </form>
+
+</body>
+</html>

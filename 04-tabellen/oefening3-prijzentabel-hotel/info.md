@@ -33,5 +33,4 @@ Voeg de hotelafbeelding toe.
 
 ## Referentie
 
-> 📷 **Optioneel voorbeeld:** hier kan een full-page screenshot (`referentie.png`) van het
-> afgewerkte resultaat worden toegevoegd.
+> 📷 **Voorbeeld:** in `voorbeeld.png` zie je het afgewerkte resultaat.

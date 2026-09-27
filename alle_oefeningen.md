@@ -184,7 +184,7 @@ Maps...) in plaats van zelf gehost.
 | # | Titel | Thema | Moeilijkheidsgraad | Beschrijving |
 |---|-------|-------|---------------------|--------------|
 | 1 | Foto met bijschrift | Favoriete foto/herinnering | Makkelijk | Eén `<figure>` met `<img alt="...">` en een `<figcaption>`. |
-| 2 | Stappenplan in beeld | Bv. "hoe teken ik een paard" / eigen stappenplan | Gemiddeld | Eén `<figure>` met meerdere `<img>`'s en één gemeenschappelijke `<figcaption>`, elk met een eigen, zinvolle `alt`-tekst. |
+| 2 | Meerdere afbeeldingen | Bv. informatie over paarden / eigen onderwerp | Gemiddeld | Eén `<figure>` met meerdere `<img>`'s en één gemeenschappelijke `<figcaption>`, elk met een eigen, zinvolle `alt`-tekst. |
 | 3 | Video & kaart embedden | Favoriete plek of evenement | Gemiddeld | Pagina met een ingesloten YouTube-video en een ingesloten Google Maps-locatie via `<iframe>`, gecombineerd met begeleidende tekst. |
 | 4 | Responsieve afbeelding | Bv. een productpagina of hero-afbeelding | Moeilijk | `<picture>`-element met meerdere `<source media="...">`-varianten en een standaard `<img>` als fallback; student moet ook het juiste bestandsformaat beargumenteren (jpg vs. png vs. svg vs. webp). |
 
@@ -332,7 +332,7 @@ werkt (of volledig leeg, naargelang het gewenste niveau van ondersteuning).
 > - `styles.css` — styling zodat de pagina er netjes uitziet
 > - `info.md` — de instructies voor de student
 > - `img/` — map met de afbeeldingen van deze oefening (enkel waar nodig)
-> - `referentie.png` — *(optioneel)* full-page screenshot van het afgewerkte resultaat
+> - `voorbeeld.png` — *(optioneel)* full-page screenshot van het afgewerkte resultaat
 >   (aangeleverd door de docent, enkel waar een volledig voorbeeld nuttig is)
 
 ```
@@ -346,7 +346,7 @@ html-cursus-oefeningen/
 │   │   ├── styles.css
 │   │   ├── info.md
 │   │   ├── img/                (afbeeldingen van deze oefening, enkel waar nodig)
-│   │   └── referentie.png      (optioneel screenshot)
+│   │   └── voorbeeld.png      (optioneel screenshot)
 │   ├── oefening2-code-opschonen/        (idem)
 │   ├── oefening3-metadata-en-links/     (idem)
 │   └── oefening4-menukaart/             (idem)
@@ -385,14 +385,14 @@ html-cursus-oefeningen/
   vereisten uit `info.md` voldoet en dezelfde `styles.css` gebruikt.
 - Dient als referentie voor de docent en als nakijkvoorbeeld voor de student.
 
-### Referentie-screenshot (`referentie.png`)
+### Voorbeeld-screenshot (`voorbeeld.png`)
 - Waar een **volledig voorbeeld** van de afgewerkte pagina nuttig is, levert de docent een
-  **full-page screenshot** van het eindresultaat aan. Dat bestand komt als `referentie.png` in de
+  **full-page screenshot** van het eindresultaat aan. Dat bestand komt als `voorbeeld.png` in de
   map van de oefening te staan en wordt in `info.md` vermeld.
 - Zie de tabel hieronder voor de oefeningen waar zo'n screenshot **aanbevolen** is.
 
-### Waar is een referentie-screenshot aanbevolen?
-| Oefening | Referentie-screenshot |
+### Waar is een voorbeeld-screenshot aanbevolen?
+| Oefening | Voorbeeld-screenshot |
 |----------|-----------------------|
 | 01.1 Mijn eerste pagina | aanbevolen |
 | 02.2 Persoonlijk profiel | aanbevolen |
@@ -463,7 +463,7 @@ html-cursus-oefeningen/
 | 01.1 Mijn eerste pagina | 1 afbeelding (bv. foto van jezelf) |
 | 03.4 Portfolio / linkoverzicht | minstens 1 gelinkte afbeelding |
 | 05.1 Foto met bijschrift | 1 afbeelding (favoriete foto) |
-| 05.2 Stappenplan in beeld | meerdere afbeeldingen (minstens 3 stappen) |
+| 05.2 Meerdere afbeeldingen | meerdere afbeeldingen (2 paardenfoto's) |
 | 05.4 Responsieve afbeelding | minstens 2–3 varianten (verschillende breedtes/formaten) |
 | 07.1 Basis pagina-skelet | optioneel: 1 logo |
 | 07.2 Blogartikel met zijbalk | optioneel: 1 afbeelding bij het artikel |
@@ -543,7 +543,7 @@ nodig; die gebruiken respectievelijk `<iframe>`-embeds en een iconfont-CDN.
 - **05.1 Foto met bijschrift**:
   - Joshua Tree National Park — [bron](https://commons.wikimedia.org/wiki/File:Joshua_Tree_National_Park_2013.jpg) · direct: `https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Joshua_Tree_National_Park_2013.jpg/1280px-Joshua_Tree_National_Park_2013.jpg`
   - Toscaans landschap — [bron](https://commons.wikimedia.org/wiki/File:Tuscan_Landscape_6.JPG) · direct: `https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Tuscan_Landscape_6.JPG/1280px-Tuscan_Landscape_6.JPG`
-- **05.2 Stappenplan in beeld** (bv. "hoe teken ik een paard"):
+- **05.2 Meerdere afbeeldingen** (informatie over paarden):
   - Paard (december 2014) — [bron](https://commons.wikimedia.org/wiki/File:Horse_December_2014-1.jpg) · direct: `https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Horse_December_2014-1.jpg/1280px-Horse_December_2014-1.jpg`
   - Paarden (Biandintz eta zaldiak) — [bron](https://commons.wikimedia.org/wiki/File:Biandintz_eta_zaldiak_-_modified2.jpg) · direct: `https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Biandintz_eta_zaldiak_-_modified2.jpg/1280px-Biandintz_eta_zaldiak_-_modified2.jpg`
 - **05.3 Video & kaart embedden** (kaart als begeleidende afbeelding):

@@ -33,5 +33,4 @@ motto in een `blockquote`. Gebruik de afbeelding `img/profiel.jpg`.
 
 ## Referentie
 
-> 📷 **Optioneel voorbeeld:** hier kan een full-page screenshot (`referentie.png`) van het
-> afgewerkte resultaat worden toegevoegd.
+> 📷 **Voorbeeld:** in `voorbeeld.png` zie je het afgewerkte resultaat.

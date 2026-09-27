@@ -1,3 +1,4 @@
+
 # HTML/CSS-oefeningen — Generatie-ontwerp (spec)
 
 > Datum: 2026-09-26
@@ -121,8 +122,8 @@ student die moet opsporen en corrigeren. De opdracht staat nog steeds als commen
 ### 4.2 `oplossing.html`
 
 Afgewerkte, volledige versie die aan álle vereisten uit `info.md` voldoet, met dezelfde
-`styles.css`. Is een **zelf-check-referentie voor de student** (er is geen nakijker). Bij
-fout-herstellende oefeningen is `oplossing.html` de *gecorrigeerde* versie.
+`styles.css`. Is referentie voor docent én nakijkvoorbeeld voor student. Bij fout-herstellende
+oefeningen is `oplossing.html` de *gecorrigeerde* versie.
 
 ### 4.3 `styles.css`
 
@@ -142,9 +143,9 @@ HTML gebeurt met relatief pad `img/<bestand>`.
 ### 4.6 `referentie.png`
 
 We genereren **geen** screenshots (geen browser beschikbaar). Bij de 13 "aanbevolen" oefeningen
-komt er een duidelijk gemarkeerde regel in `info.md` dat hier optioneel een full-page screenshot
-als visueel voorbeeld kan worden toegevoegd. De lijst staat in `alle_oefeningen.md` ("Waar is een
-referentie-screenshot aanbevolen?").
+komt er een duidelijk gemarkeerde regel in `info.md` dat de docent hier een full-page screenshot
+kan toevoegen. De lijst staat in `alle_oefeningen.md` ("Waar is een referentie-screenshot
+aanbevolen?").
 
 ---
 
@@ -227,7 +228,7 @@ Bij de 13 "aanbevolen"-oefeningen komt extra de regel:
 
 ```markdown
 ## Referentie
-> 📷 **Optioneel voorbeeld:** hier kan een full-page screenshot (`referentie.png`) van het
+> 📷 **Voor de docent:** hier kan een full-page screenshot (`referentie.png`) van het
 > afgewerkte resultaat worden toegevoegd.
 ```
 
@@ -252,7 +253,7 @@ Bij de 13 "aanbevolen"-oefeningen komt extra de regel:
 - Elke `oplossing.html` en `index.html` wordt handmatig nageleefd op de huisregels uit §3
   (nesting, quotes, lowercase, `alt`, geen `<b>`/`<i>`, titelhiërarchie, geldige tabel/form).
 - Voor de fout-herstellende oefeningen (01.2, 07.3, 08.1) worden de opzettelijke fouten
-  expliciet genoteerd in een apart intern lijstje (niet in de student-`info.md`).
+  expliciet genoteerd in een apart lijstje (voor de docent), niet in de `info.md` van de student.
 - De W3C-validator (https://validator.w3.org/#validate_by_input) wordt in `info.md` als
   controlestap vermeld waar `alle_oefeningen.md` dat vereist (les 08).
 

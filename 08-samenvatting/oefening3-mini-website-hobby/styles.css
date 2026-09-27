@@ -1,0 +1,92 @@
+/* Huisstijl HTML-cursus — thema 08 Samenvatting */
+:root {
+  --accent: #2563eb;
+  --accent-soft: #e8f0fe;
+  --page: #eef0f3;
+  --card: #ffffff;
+  --text: #2a2d34;
+  --muted: #66707e;
+  --border: #e2e6ea;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #12141a;
+    --card: #1c1f26;
+    --text: #e8eaee;
+    --muted: #9aa4b0;
+    --border: #2e333d;
+  }
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { background: var(--page); }
+
+body {
+  max-width: 720px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 2.5rem 2rem;
+  background: var(--card);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.06);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 { color: var(--accent); line-height: 1.25; margin: 1.5em 0 0.5em; }
+h1 { font-size: 2rem; margin-top: 0; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; }
+p { margin: 0.75em 0; }
+img, iframe, video, picture { max-width: 100%; }
+
+/* ==== THEME EXTRA CSS (below) ==== */
+/* Tekst (les 02) */
+blockquote { border-left: 4px solid var(--accent); padding: 0.5rem 1rem; margin: 1rem 0; background: var(--accent-soft); font-style: italic; }
+address { font-style: normal; color: var(--muted); margin: 0.5rem 0; }
+ul, ol, dl { margin: 0.75rem 0; padding-left: 1.5rem; }
+dt { font-weight: 600; }
+details { margin: 0.5rem 0; padding: 0.5rem 0.75rem; border: 1px solid var(--border); border-radius: 6px; }
+summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+mark { background: var(--accent-soft); color: inherit; padding: 0 0.2em; }
+abbr { text-decoration: underline dotted; cursor: help; }
+
+/* Links (les 03) */
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { border-bottom-color: var(--accent); }
+nav ul { list-style: none; display: flex; gap: 1.25rem; padding: 0.5rem 0; }
+
+/* Tabellen (les 04) */
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+caption { caption-side: top; font-weight: 600; color: var(--accent); margin-bottom: 0.5rem; }
+th, td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
+thead th { background: var(--accent); color: #fff; }
+tbody tr:nth-child(even) { background: var(--accent-soft); }
+tfoot td { font-weight: 600; background: var(--accent-soft); }
+
+/* Media (les 05) */
+figure { margin: 1.5rem 0; }
+figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; font-style: italic; }
+img, iframe, video { max-width: 100%; height: auto; border-radius: 6px; }
+iframe { aspect-ratio: 16 / 9; width: 100%; border: 0; }
+
+/* Formulieren (les 06) */
+fieldset { border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.25rem; margin: 1rem 0; }
+legend { padding: 0 0.5rem; font-weight: 600; color: var(--accent); }
+label { display: block; margin: 0.75rem 0 0.25rem; font-weight: 600; }
+input, select, textarea { width: 100%; padding: 0.5rem 0.6rem; border: 1px solid var(--border); border-radius: 6px; font: inherit; background: var(--card); color: var(--text); }
+input[type="radio"], input[type="checkbox"], input[type="range"], input[type="color"] { width: auto; }
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+button { background: var(--accent); color: #fff; border: none; padding: 0.5rem 1.25rem; border-radius: 6px; font: inherit; font-weight: 600; cursor: pointer; }
+button[type="reset"] { background: var(--muted); }
+
+/* Structureren (les 07) */
+header, footer { padding: 1rem 0; }
+header { border-bottom: 2px solid var(--accent); }
+footer { border-top: 1px solid var(--border); margin-top: 2rem; color: var(--muted); font-size: 0.9rem; }
+main { margin: 1.5rem 0; }
+article { padding: 1rem 0; border-bottom: 1px solid var(--border); }
+aside { background: var(--accent-soft); border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+section { margin: 1.5rem 0; }

@@ -8,7 +8,7 @@
 
 Bouw een receptpagina voor pannenkoeken: een hoofdtitel, een korte introductie, een lijst
 met ingrediënten en een genummerde lijst met bereidingsstappen. Gebruik de afbeelding
-`img/koken.jpg`.
+`img/pancakes.jpg`.
 
 ## Vereisten
 

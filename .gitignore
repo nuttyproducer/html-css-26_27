@@ -1,2 +1,5 @@
+# Author-internal tooling & docs — not for students
 .superpowers/
-.claude/settings.local.json
+.claude/
+docs/superpowers/
+alle_oefeningen.md
